@@ -1,6 +1,7 @@
 import React from 'react';
-import { Volume2, VolumeX, HelpCircle, RotateCcw, Trophy, Sparkles } from 'lucide-react';
+import { Volume2, VolumeX, HelpCircle, RotateCcw, Trophy } from 'lucide-react';
 import { GameMode } from '../game/types';
+import { BubbleShooterLogo } from './BubbleShooterLogo';
 
 interface GameHeaderProps {
   score: number;
@@ -31,12 +32,10 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
     <header className="w-full max-w-4xl mx-auto flex items-center justify-between gap-4 px-4 py-3 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md">
       {/* Zone 1: Wordmark & Level Badge */}
       <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-500 flex items-center justify-center shadow-sm shadow-sky-500/20">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
+        <div className="flex items-center gap-2.5">
+          <BubbleShooterLogo size="sm" />
           <span className="font-extrabold tracking-tight text-lg sm:text-xl text-white">
-            Bubble Arcade
+            Bubble Shooter
           </span>
         </div>
 
@@ -51,7 +50,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
               <span className="max-w-[110px] truncate">{levelName}</span>
             </>
           ) : (
-            <span className="text-amber-400">Endless Arcade</span>
+            <span className="text-amber-400">Endless Mode</span>
           )}
         </button>
       </div>

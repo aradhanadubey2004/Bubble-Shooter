@@ -1,6 +1,7 @@
 import React from 'react';
-import { X, Target, Sparkles, Layers, ShieldAlert, MousePointer, Keyboard, Smartphone } from 'lucide-react';
+import { X, Target, Layers, ShieldAlert, MousePointer, Keyboard, Smartphone, Flame } from 'lucide-react';
 import { ALL_COLORS, BUBBLE_COLORS } from '../game/constants';
+import { BubbleShooterLogo } from './BubbleShooterLogo';
 
 interface HowToPlayModalProps {
   isOpen: boolean;
@@ -15,8 +16,8 @@ export const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ isOpen, onClose 
       <div className="w-full max-w-md rounded-2xl bg-slate-900 border border-slate-800 p-6 shadow-2xl text-slate-100 max-h-[90vh] overflow-y-auto">
         {/* Top Header */}
         <div className="flex items-center justify-between pb-3 border-b border-slate-800">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-5 h-5 text-sky-400" />
+          <div className="flex items-center gap-2.5">
+            <BubbleShooterLogo size="sm" />
             <h2 className="text-lg font-bold text-white tracking-tight">How to Play Bubble Shooter</h2>
           </div>
           <button
@@ -44,7 +45,7 @@ export const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ isOpen, onClose 
 
           <div className="flex items-start gap-3">
             <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
-              <Sparkles className="w-4 h-4" />
+              <Flame className="w-4 h-4" />
             </div>
             <div>
               <h3 className="text-sm font-semibold text-white">2. Match 3 or More</h3>

@@ -503,7 +503,7 @@ export const BubbleGame: React.FC<BubbleGameProps> = ({
               // Miss / no match -> reset combo
               comboRef.current = 0;
 
-              // In Endless Arcade Mode, ceiling drops every 5 misses
+              // In Endless Mode, ceiling drops every 5 misses
               if (mode === 'ARCADE') {
                 const newMisses = missesLeftRef.current - 1;
                 if (newMisses <= 0) {

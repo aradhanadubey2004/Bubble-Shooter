@@ -61,7 +61,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
             }`}
           >
             <Infinity className="w-3.5 h-3.5" />
-            <span>Endless Arcade</span>
+            <span>Endless Mode</span>
           </button>
         </div>
 
@@ -111,7 +111,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
             <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-3">
               <Infinity className="w-6 h-6" />
             </div>
-            <h3 className="text-base font-bold text-white mb-1">Endless Arcade Mode</h3>
+            <h3 className="text-base font-bold text-white mb-1">Endless Mode</h3>
             <p className="text-xs text-slate-400 leading-relaxed mb-4">
               Test your endurance! The ceiling drops 1 row every 5 non-matching shots. Pop bubbles, prevent the line from crossing the danger threshold, and achieve the highest possible score!
             </p>
@@ -122,7 +122,7 @@ export const LevelSelectModal: React.FC<LevelSelectModalProps> = ({
               }}
               className="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-colors"
             >
-              Start Endless Arcade
+              Start Endless Mode
             </button>
           </div>
         )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, RotateCcw, ArrowRight, Star, AlertTriangle, Sparkles, Home } from 'lucide-react';
+import { Trophy, RotateCcw, ArrowRight, Star, AlertTriangle, Home, Flame } from 'lucide-react';
 import { GameStats, LevelConfig } from '../game/types';
 
 interface GameOverModalProps {
@@ -114,7 +114,7 @@ export const GameOverModal: React.FC<GameOverModalProps> = ({
 
           {isNewHighScore && (
             <div className="mt-2 pt-2 border-t border-slate-800/60 flex items-center justify-center gap-1.5 text-xs font-bold text-amber-400">
-              <Sparkles className="w-3.5 h-3.5" />
+              <Flame className="w-3.5 h-3.5 fill-current" />
               <span>New Personal Record!</span>
             </div>
           )}

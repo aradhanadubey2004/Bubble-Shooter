@@ -11,7 +11,8 @@ import { LevelSelectModal } from './components/LevelSelectModal';
 import { sound } from './game/audio';
 import { GAME_LEVELS } from './game/levels';
 import { GameMode } from './game/types';
-import { Play, Sparkles, Trophy, HelpCircle, Flame, Target } from 'lucide-react';
+import { Play, Trophy, HelpCircle, Flame, Target } from 'lucide-react';
+import { BubbleShooterLogo } from './components/BubbleShooterLogo';
 
 export default function App() {
   const [hasStarted, setHasStarted] = useState<boolean>(false);
@@ -95,14 +96,9 @@ export default function App() {
         {!hasStarted ? (
           /* Title Menu / Welcome Screen */
           <div className="w-full max-w-md mx-auto rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 shadow-2xl text-center flex flex-col items-center">
-            {/* Logo Mascot Badge */}
-            <div className="relative mb-6">
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-purple-500 flex items-center justify-center shadow-xl shadow-indigo-500/25 animate-bounce-subtle">
-                <Sparkles className="w-10 h-10 text-white" />
-              </div>
-              <div className="absolute -bottom-2 -right-2 px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[10px] uppercase tracking-wider shadow">
-                Arcade
-              </div>
+            {/* Custom Colorful Bubble Shooter Logo */}
+            <div className="mb-5 flex items-center justify-center animate-bounce-subtle">
+              <BubbleShooterLogo size="lg" />
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-white mb-2">
@@ -150,7 +146,7 @@ export default function App() {
                 }}
                 className="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition-colors flex items-center justify-center gap-1.5"
               >
-                <span>Play Endless Arcade Mode</span>
+                <span>Play Endless Mode</span>
               </button>
 
               <button
@@ -179,7 +175,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="w-full text-center py-3 text-xs text-slate-500 border-t border-slate-900">
-        <p>Built with React, Vite & HTML5 Canvas · Responsive Arcade Gaming</p>
+        <p>Built with React, Vite & HTML5 Canvas · Responsive Bubble Shooter</p>
       </footer>
 
       {/* How to Play Modal */}

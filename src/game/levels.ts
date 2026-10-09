@@ -114,8 +114,8 @@ export const GAME_LEVELS: LevelConfig[] = [
   },
   {
     id: 8,
-    name: 'Arcade Champion',
-    subtitle: 'Master of Bubbles',
+    name: 'Bubble Master',
+    subtitle: 'Champion of Bubbles',
     colors: ['red', 'blue', 'green', 'yellow', 'purple', 'cyan'],
     maxShots: 25,
     description: 'The ultimate puzzle layout. Every single shot counts. Clear the board to achieve victory!',
