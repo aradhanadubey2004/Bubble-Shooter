@@ -1,0 +1,6 @@
+{
+  "name": "Bubble Shooter Arcade",
+  "description": "A vibrant, responsive Bubble Shooter arcade game built with React and HTML5 Canvas. Aim, match colors, bounce shots, trigger chain reactions, and clear challenging levels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
